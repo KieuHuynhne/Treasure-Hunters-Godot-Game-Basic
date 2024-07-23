@@ -32,3 +32,9 @@ Treasure Hunters is a 2D game developed using Godot. Players take on the role of
    
 ## Note
 This project represents the basic functionalities of a 2D Godot game and does not include a database.
+
+## Contact
+For any questions, please contact me at:
+
+Email: knnhuynh03@gmail.com
+
