@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b3hfirrwwpmgv"
+path="res://.godot/imported/8bit-music-for-game-68698 (1).wav-09ae1a68fb8b9eb9b2aad6816b1e402b.sample"
+
+[deps]
+
+source_file="res://audio/8bit-music-for-game-68698 (1).wav"
+dest_files=["res://.godot/imported/8bit-music-for-game-68698 (1).wav-09ae1a68fb8b9eb9b2aad6816b1e402b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

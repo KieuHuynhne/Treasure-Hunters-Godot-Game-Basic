@@ -1,0 +1,147 @@
+[gd_scene load_steps=32 format=3 uid="uid://dae73t11gcrf6"]
+
+[ext_resource type="Texture2D" uid="uid://librtf2okccy" path="res://Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/02-Run/Run 06.png" id="1_41lyo"]
+[ext_resource type="Script" path="res://Interactable/crab.gd" id="1_wr6ld"]
+[ext_resource type="Texture2D" uid="uid://dxkp7v4xc2bw8" path="res://Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 01.png" id="2_8u2us"]
+[ext_resource type="Texture2D" uid="uid://cl8vr3pcdwjsv" path="res://Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 02.png" id="3_vv7mx"]
+[ext_resource type="Texture2D" uid="uid://b0h7bn8gba0js" path="res://Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 03.png" id="4_lcclx"]
+[ext_resource type="Texture2D" uid="uid://cnwqi1p8527f4" path="res://Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 04.png" id="5_kpor4"]
+[ext_resource type="Texture2D" uid="uid://dyt0wleksn450" path="res://Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 05.png" id="6_hpa5p"]
+[ext_resource type="Texture2D" uid="uid://b2vjxk74aengq" path="res://Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 06.png" id="7_ybpgt"]
+[ext_resource type="Texture2D" uid="uid://cqk7cstkmjtfw" path="res://Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 07.png" id="8_0ntrg"]
+[ext_resource type="Texture2D" uid="uid://cniur324tff33" path="res://Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 08.png" id="9_e7p0n"]
+[ext_resource type="Texture2D" uid="uid://dcctcum71qfbo" path="res://Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 09.png" id="10_fhyuk"]
+[ext_resource type="Texture2D" uid="uid://4cycyd4uxd7d" path="res://Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/02-Run/Run 02.png" id="11_jmjhg"]
+[ext_resource type="Texture2D" uid="uid://h14o7vqc35qd" path="res://Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/02-Run/Run 03.png" id="12_lvjnt"]
+[ext_resource type="Texture2D" uid="uid://cyyu3t44rg6c1" path="res://Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/02-Run/Run 04.png" id="13_rdr8p"]
+[ext_resource type="Texture2D" uid="uid://bct5pxbtft5ky" path="res://Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/02-Run/Run 05.png" id="14_72vc1"]
+[ext_resource type="Texture2D" uid="uid://ofmkihj0svou" path="res://Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/07-Attack/Attack 01.png" id="15_awrlj"]
+[ext_resource type="Texture2D" uid="uid://bpka6n5utxfr0" path="res://Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/07-Attack/Attack 02.png" id="16_vhyvw"]
+[ext_resource type="Texture2D" uid="uid://c2wxr521662gn" path="res://Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/07-Attack/Attack 03.png" id="17_pquga"]
+[ext_resource type="Texture2D" uid="uid://dl6ciexj5bv0u" path="res://Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/07-Attack/Attack 04.png" id="18_fl8yq"]
+[ext_resource type="Texture2D" uid="uid://b7fpb07jdyv03" path="res://Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/10-Dead Ground/Dead Ground 01.png" id="19_a3mld"]
+[ext_resource type="Texture2D" uid="uid://css6l1lwh648b" path="res://Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/10-Dead Ground/Dead Ground 02.png" id="20_j37ge"]
+[ext_resource type="Texture2D" uid="uid://ci80wyy3cp80h" path="res://Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/10-Dead Ground/Dead Ground 03.png" id="21_baqea"]
+[ext_resource type="Texture2D" uid="uid://dd8t5ll6irkxb" path="res://Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Crabby/10-Dead Ground/Dead Ground 04.png" id="22_ved4h"]
+[ext_resource type="Texture2D" uid="uid://bsak17yyeowfa" path="res://Treasure Hunters/Treasure Hunters/The Crusty Crew/Sprites/Dialogue/Dead/Dead In 03.png" id="23_eamup"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yebqg"]
+radius = 12.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7gmw1"]
+radius = 13.0
+height = 26.0
+
+[sub_resource type="Animation" id="Animation_x2014"]
+resource_name = "Attack"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("15_awrlj"), ExtResource("16_vhyvw"), ExtResource("17_pquga"), ExtResource("18_fl8yq")]
+}
+
+[sub_resource type="Animation" id="Animation_cog1d"]
+resource_name = "Dead"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.2, 0.3, 0.4, 0.5, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("19_a3mld"), ExtResource("20_j37ge"), ExtResource("21_baqea"), ExtResource("22_ved4h"), ExtResource("23_eamup")]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1.3),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"queue_free"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_guu3r"]
+resource_name = "Idle"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.2001, 0.3, 0.4, 0.4001, 0.4002, 0.5, 0.6, 0.7, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("2_8u2us"), ExtResource("3_vv7mx"), ExtResource("4_lcclx"), ExtResource("2_8u2us"), ExtResource("5_kpor4"), ExtResource("2_8u2us"), ExtResource("2_8u2us"), ExtResource("6_hpa5p"), ExtResource("7_ybpgt"), ExtResource("8_0ntrg"), ExtResource("9_e7p0n"), ExtResource("10_fhyuk")]
+}
+
+[sub_resource type="Animation" id="Animation_qxcdb"]
+resource_name = "Run"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 0.2, 0.3, 0.3001, 0.4, 0.5, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("2_8u2us"), ExtResource("11_jmjhg"), ExtResource("2_8u2us"), ExtResource("12_lvjnt"), ExtResource("13_rdr8p"), ExtResource("14_72vc1"), ExtResource("1_41lyo")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ikgp7"]
+_data = {
+"Attack": SubResource("Animation_x2014"),
+"Dead": SubResource("Animation_cog1d"),
+"Idle": SubResource("Animation_guu3r"),
+"Run": SubResource("Animation_qxcdb")
+}
+
+[node name="Crab" type="CharacterBody2D" groups=["Enemy"]]
+collision_layer = 2
+script = ExtResource("1_wr6ld")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-2, -2)
+texture = ExtResource("18_fl8yq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3, -1)
+shape = SubResource("CircleShape2D_yebqg")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-3, -1)
+shape = SubResource("CapsuleShape2D_7gmw1")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_ikgp7")
+}
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2(-14, 1)
+target_position = Vector2(0, 13)
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

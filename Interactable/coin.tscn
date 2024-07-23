@@ -1,0 +1,47 @@
+[gd_scene load_steps=8 format=3 uid="uid://dbw7yu8ltlxoh"]
+
+[ext_resource type="Texture2D" uid="uid://c80d0ekughijf" path="res://Treasure Hunters/Treasure Hunters/Pirate Treasure/Sprites/Blue Diamond/01.png" id="1_6ifcx"]
+[ext_resource type="Script" path="res://Interactable/diamond.gd" id="1_g2wyl"]
+[ext_resource type="Texture2D" uid="uid://ck5ol60vxlqgx" path="res://Treasure Hunters/Treasure Hunters/Pirate Treasure/Sprites/Blue Diamond/02.png" id="3_2mc1y"]
+[ext_resource type="Texture2D" uid="uid://cxdd4xsf278fm" path="res://Treasure Hunters/Treasure Hunters/Pirate Treasure/Sprites/Blue Diamond/03.png" id="4_7fk4s"]
+[ext_resource type="Texture2D" uid="uid://bphihvqdeunpb" path="res://Treasure Hunters/Treasure Hunters/Pirate Treasure/Sprites/Blue Diamond/04.png" id="5_0u3pm"]
+
+[sub_resource type="Animation" id="Animation_hg25u"]
+resource_name = "Idle"
+length = 0.3
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.1001, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("1_6ifcx"), ExtResource("3_2mc1y"), ExtResource("1_6ifcx"), ExtResource("4_7fk4s"), ExtResource("5_0u3pm")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_a3s6t"]
+_data = {
+"Idle": SubResource("Animation_hg25u")
+}
+
+[node name="Diamond" type="Node2D"]
+script = ExtResource("1_g2wyl")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("5_0u3pm")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PackedVector2Array(-7, 0, -1, 6, 1, 6, 7, 0, 7, -3, 4, -6, -4, -6, -7, -3)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_a3s6t")
+}
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
