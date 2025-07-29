@@ -36,5 +36,5 @@ This project represents the basic functionalities of a 2D Godot game and does no
 ## Contact
 For any questions, please contact me at:
 
-Email: knnhuynh03@gmail.com
+Email: kieuhuynhfw@gmail.com
 
