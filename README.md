@@ -1,6 +1,7 @@
 # Treasure Hunters
 
 Treasure Hunters is a 2D game developed using Godot. Players take on the role of a brave pirate whose goal is to collect diamonds scattered across the map, attack enemies, avoid traps, and ultimately find the treasure chest to complete the level. Players are ranked based on the number of diamonds collected. The game currently features only one level.
+<img width="1143" height="691" alt="2026-03-04_13h49_33" src="https://github.com/user-attachments/assets/1182d7a2-1dca-435f-b168-73ebb406a657" />
 
 ## Game Details
 
